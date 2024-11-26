@@ -1,11 +1,13 @@
-import React from "react";
-import Signup from "./statelesscomponents/Signup";
-import Signin from "./statelesscomponents/Signin";
-import StudentRecords from "./statelesscomponents/StudentsRecords";
-import Newsfeed from "./statelesscomponents/Newsfeed";
+import React, { Component } from 'react';
+
+import Signup from "./statefulcomponents/Signup";
+import Signin from "./statefulcomponents/Signin";
+import StudentRecords from "./statefulcomponents/StudentsRecords";
+import Newsfeed from "./statefulcomponents/Newsfeed";
 import "./App.css";
 
-function App() {
+class AppStateful extends Component {
+    render(){
     return (
         <div className="container">
             <div className="signup">
@@ -27,5 +29,6 @@ function App() {
         </div>
     );
 }
+}
 
-export default App;
+export default AppStateful;
