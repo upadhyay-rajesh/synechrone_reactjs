@@ -7,6 +7,8 @@ import net.javaguides.ems.exception.ResourceNotFoundException;
 import net.javaguides.ems.mapper.DepartmentMapper;
 import net.javaguides.ems.repository.DepartmentRepository;
 import net.javaguides.ems.service.DepartmentService;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,7 +17,7 @@ import java.util.stream.Collectors;
 @Service
 @AllArgsConstructor
 public class DepartmentServiceImpl implements DepartmentService {
-
+@Autowired
     private DepartmentRepository departmentRepository;
 
     @Override
